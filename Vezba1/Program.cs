@@ -92,7 +92,8 @@ else
 
 
 
-
+// nekoj comment
+// nekoj comment 2
 
 
 //string space = "/";
