@@ -1,6 +1,8 @@
 ﻿using Vezba1;
 
-Console.WriteLine("Hello, World!!!");
+#region Test Region 1 - Commented
+
+//Console.WriteLine("Hello, World!!!");
 // Console.ReadKey();
 
 /* ova 
@@ -15,14 +17,14 @@ Console.WriteLine("Hello, World!!!");
 //int b = 30;
 //double c = 0.2;
 
-int a = 1;
-int b = 2;
-int c = 3;
-int d = a /* ova e objasnuvanje za promenliva a */ + c;
-int finalResult = 4;
+//int a = 1;
+//int b = 2;
+//int c = 3;
+//int d = a /* ova e objasnuvanje za promenliva a */ + c;
+//int finalResult = 4;
 
 //0  //1  //2 //3  //4
-Console.WriteLine($"Rezultatot na 1 + 3 = {finalResult}");
+//Console.WriteLine($"Rezultatot na 1 + 3 = {finalResult}");
 
 
 //Console.WriteLine(36 - 6);
@@ -114,3 +116,59 @@ Console.WriteLine($"Rezultatot na 1 + 3 = {finalResult}");
 // "1234"
 
 
+#endregion
+
+
+#region Test Region 2
+
+Console.WriteLine("Region 2 Execute....");
+
+//var functions = new Functions();
+Functions functions = new Functions();
+
+User user = new User();
+user.Id = 1;
+user.Name = "Ivan";
+user.Country = "Macedonia";
+user.City = "Skopje";
+user.Address = "Ilindenska br.1";
+user.Email = "korisnik@gmail.com";
+user.Username = "username_korisnik";
+user.Password = "password";
+user.DateCreated = DateTime.Now;
+user.LastOnline = DateTime.Now;
+user.Years = 30;
+
+User user2 = new User()
+{
+    Id = 2,
+    Name = "Jovan",
+    City = "Veles",
+    Country = "Macedonia"
+};
+
+Console.WriteLine(user);
+Console.WriteLine("\n");
+Console.WriteLine("\n");
+Console.WriteLine("\n");
+
+Console.WriteLine(
+    $"Kornisnikot so ime {user.Name}\n" +
+    $"so mesto na ziveenje vo {user.City}, {user.Country} \n" +
+    $"ima {user.Years} godini!"
+    );
+
+Console.WriteLine("\n");
+
+Console.WriteLine(
+    $"Kornisnikot so ime {user2.Name}\n" +
+    $"so mesto na ziveenje vo {user2.City}, {user2.Country} \n" +
+    $"ima {user2.Years} godini!"
+    );
+
+var number = 1;
+
+//var checkIfNumber = 
+
+
+#endregion
