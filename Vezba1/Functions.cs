@@ -84,6 +84,11 @@ namespace Vezba1
                 str1 = $"Transakcijata e uspesna so vrednost: {money}, no imate mnogu malku sredstva preostanati, ve molime nadopolnete ja vasata smetka";
                 return str1;
             }
+            //else if (money >= 500 || money <= 510)
+            //{
+            //    str1 = $"Transakcijata e uspesna so vrednost: {money}, no imate mnogu malku sredstva preostanati, ve molime nadopolnete ja vasata smetka";
+            //    return str1;
+            //}
             else
             {
                 str1 = $"Nemate dovolno sredstva na vasata smetka!";
