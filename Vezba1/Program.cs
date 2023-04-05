@@ -121,54 +121,70 @@
 
 #region Test Region 2
 
-Console.WriteLine("Region 2 Execute....");
+//Console.WriteLine("Region 2 Execute....");
 
-//var functions = new Functions();
+////var functions = new Functions();
+
+
+
+//User user = new User();
+//user.Id = 1;
+//user.Name = "Ivan";
+//user.Country = "Macedonia";
+//user.City = "Skopje";
+//user.Address = "Ilindenska br.1";
+//user.Email = "korisnik@gmail.com";
+//user.Username = "username_korisnik";
+//user.Password = "password";
+//user.DateCreated = DateTime.Now;
+//user.LastOnline = DateTime.Now;
+//user.Years = 30;
+
+//User user2 = new User()
+//{
+//    Id = 2,
+//    Name = "Jovan",
+//    City = "Veles",
+//    Country = "Macedonia"
+//};
+
+//Console.WriteLine(user);
+//Console.WriteLine("\n");
+//Console.WriteLine("\n");
+//Console.WriteLine("\n");
+
+//Console.WriteLine(
+//    $"Kornisnikot so ime {user.Name}\n" +
+//    $"so mesto na ziveenje vo {user.City}, {user.Country} \n" +
+//    $"ima {user.Years} godini!"
+//    );
+
+//Console.WriteLine("\n");
+
+//Console.WriteLine(
+//    $"Kornisnikot so ime {user2.Name}\n" +
+//    $"so mesto na ziveenje vo {user2.City}, {user2.Country} \n" +
+//    $"ima {user2.Years} godini!"
+//    );
+
+//var number = 1;
+
+////var checkIfNumber = 
+
+
+#endregion
+
+#region Test Region 3
+
 Functions functions = new Functions();
 
-User user = new User();
-user.Id = 1;
-user.Name = "Ivan";
-user.Country = "Macedonia";
-user.City = "Skopje";
-user.Address = "Ilindenska br.1";
-user.Email = "korisnik@gmail.com";
-user.Username = "username_korisnik";
-user.Password = "password";
-user.DateCreated = DateTime.Now;
-user.LastOnline = DateTime.Now;
-user.Years = 30;
+var fiveCheck = functions.CheckIfItsFive(5);
 
-User user2 = new User()
-{
-    Id = 2,
-    Name = "Jovan",
-    City = "Veles",
-    Country = "Macedonia"
-};
+//Console.WriteLine(fiveCheck);
 
-Console.WriteLine(user);
-Console.WriteLine("\n");
-Console.WriteLine("\n");
-Console.WriteLine("\n");
+//functions.MakeTransaction(500.30);
 
-Console.WriteLine(
-    $"Kornisnikot so ime {user.Name}\n" +
-    $"so mesto na ziveenje vo {user.City}, {user.Country} \n" +
-    $"ima {user.Years} godini!"
-    );
-
-Console.WriteLine("\n");
-
-Console.WriteLine(
-    $"Kornisnikot so ime {user2.Name}\n" +
-    $"so mesto na ziveenje vo {user2.City}, {user2.Country} \n" +
-    $"ima {user2.Years} godini!"
-    );
-
-var number = 1;
-
-//var checkIfNumber = 
-
+var message = functions.MakeTransactionMessage(500.30);
+Console.WriteLine(message);
 
 #endregion
